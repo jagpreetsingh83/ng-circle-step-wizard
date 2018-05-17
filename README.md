@@ -33,6 +33,10 @@ $step-wizard-circle-radius: 1.8rem !default;
 
 ## NPM
 
+```
+npm i circle-step-wizard -S
+```
+
 https://www.npmjs.com/package/circle-step-wizard
 
 ## Home Page
