@@ -1,0 +1,73 @@
+$circle-color: #e9eaea !default;
+$circle-number-color: #000000 !default;
+$circle-display-text-color: #333333 !default;
+$circle-color-active: #da291c !default;
+$circle-number-color-active: #ffffff !default;
+$circle-display-text-color-active: #da291c !default;
+$circle-connecting-line-color: #e9eaea !default;
+$step-wizard-circle-radius: 1.8rem !default;
+
+.step-container {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.step-block {
+  position: relative;
+  margin-top: $step-wizard-circle-radius/2;
+  &:first-child .step-rail::before {
+    background-color: transparent;
+  }
+  &:last-child .step-rail::after {
+    background-color: transparent;
+  }
+}
+
+.step-indicator {
+  width: $step-wizard-circle-radius * 2;
+  height: $step-wizard-circle-radius * 2;
+  font-size: $step-wizard-circle-radius;
+  color: $circle-number-color;
+  background: $circle-color;
+  margin: 0 $step-wizard-circle-radius * 1.2;
+  line-height: $step-wizard-circle-radius * 2;
+  border-radius: 50%;
+  &.active {
+    background-color: $circle-color-active;
+    color: $circle-number-color-active;
+    & + .step-text {
+      color: $circle-color-active;
+    }
+  }
+}
+
+@mixin rail() {
+  height: 100%;
+  width: 50%;
+  background: $circle-connecting-line-color;
+}
+
+.step-rail {
+  height: $step-wizard-circle-radius/15;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: $step-wizard-circle-radius;
+  display: flex;
+  &::before {
+    content: '';
+    @include rail();
+  }
+  &::after {
+    content: '';
+    @include rail();
+  }
+  z-index: -1;
+}
+
+.step-text {
+  margin-top: $step-wizard-circle-radius/4;
+  color: $circle-display-text-color;
+  font-size: $step-wizard-circle-radius * 0.5;
+}
