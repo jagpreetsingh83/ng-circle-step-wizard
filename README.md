@@ -2,21 +2,13 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.3.
 
-## Demo
-
-![Steps](https://raw.githubusercontent.com/jagpreetsingh83/ng-circle-step-wizard/master/src/assets/steps.png '5 Step Circle Wizard')
-
 ## Description
 
 An easy to use circle step wizard that can help user undestand the progress and steps involved in the process
 
-## Home Page
+## Demo
 
-https://github.com/jagpreetsingh83/ng-circle-step-wizard
-
-## Source Code
-
-https://github.com/jagpreetsingh83/ng-circle-step-wizard.git
+![Steps](https://raw.githubusercontent.com/jagpreetsingh83/ng-circle-step-wizard/master/src/assets/steps.png '5 Step Circle Wizard')
 
 ## Usage
 
@@ -38,6 +30,18 @@ $circle-connecting-line-color: #e9eaea !default;
 // Circle Size
 $step-wizard-circle-radius: 1.8rem !default;
 ```
+
+## NPM
+
+https://www.npmjs.com/package/circle-step-wizard
+
+## Home Page
+
+https://github.com/jagpreetsingh83/ng-circle-step-wizard
+
+## Source Code
+
+https://github.com/jagpreetsingh83/ng-circle-step-wizard.git
 
 ## Development server
 
