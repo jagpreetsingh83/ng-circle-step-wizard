@@ -2,6 +2,16 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.3.
 
+## Demo
+
+![Steps](src/assets/steps.png '5 Step Circle Wizard')
+
+## Usage
+
+```html
+<app-circle-step [steps]="['Step 1','Step 2','Step 3', 'Step 4', 'Step 5']" [active]="2"></app-circle-step>
+```
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
