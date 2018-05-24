@@ -1,6 +1,6 @@
 {
   "name": "circle-step-wizard",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "description":
     "An easy to use circle step wizard that can help user undestand the progress and steps involved in the process",
   "homepage": "https://github.com/jagpreetsingh83/ng-circle-step-wizard",

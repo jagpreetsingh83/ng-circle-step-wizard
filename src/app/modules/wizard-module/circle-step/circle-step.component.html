@@ -1,6 +1,6 @@
 <div class="step-container" *ngIf="steps">
   <div *ngFor="let step of steps; let i=index" class="step-block">
-    <div class="step-indicator" [class.active]="i+1 === active">{{i+1}}</div>
+    <div class="step-indicator" [ngClass]="{'active': i+1 === active, 'done' : i+1 < active}">{{i+1}}</div>
     <div class="step-text">{{step}}</div>
     <div class="step-rail"></div>
   </div>

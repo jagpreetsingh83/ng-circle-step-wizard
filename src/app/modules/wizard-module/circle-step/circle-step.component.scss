@@ -17,10 +17,10 @@ $step-wizard-circle-radius: 1.8rem !default;
   position: relative;
   margin-top: $step-wizard-circle-radius/2;
   &:first-child .step-rail::before {
-    background-color: transparent;
+    background-color: transparent !important;
   }
   &:last-child .step-rail::after {
-    background-color: transparent;
+    background-color: transparent !important;
   }
 }
 
@@ -33,11 +33,25 @@ $step-wizard-circle-radius: 1.8rem !default;
   margin: 0 $step-wizard-circle-radius * 1.2;
   line-height: $step-wizard-circle-radius * 2;
   border-radius: 50%;
+  border: $step-wizard-circle-radius/15 solid $circle-color;
   &.active {
     background-color: $circle-color-active;
     color: $circle-number-color-active;
+    border-color: $circle-color-active;
     & + .step-text {
       color: $circle-color-active;
+    }
+    & ~ .step-rail::before {
+      background: $circle-color-active;
+    }
+  }
+  &.done {
+    background-color: $circle-number-color-active;
+    color: $circle-color-active;
+    border-color: $circle-color-active;
+    & ~ .step-rail::before,
+    & ~ .step-rail::after {
+      background: $circle-color-active;
     }
   }
 }
